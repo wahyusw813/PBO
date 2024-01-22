@@ -3,19 +3,19 @@ public class Rectangle extends Shape {
     private double length;
 
     public Rectangle() {
-        super(); // Memanggil konstruktor default dari superclass Shape
+        super();
         this.width = 1.0;
         this.length = 1.0;
     }
 
     public Rectangle(double width, double length) {
-        super(); // Memanggil konstruktor default dari superclass Shape
+        super();
         this.width = width;
         this.length = length;
     }
 
     public Rectangle(double width, double length, String color, boolean filled) {
-        super(color, filled); // Memanggil konstruktor parameterized dari superclass Shape
+        super(color, filled); 
         this.width = width;
         this.length = length;
     }
@@ -46,7 +46,6 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        // Menggunakan super.toString() untuk mendapatkan representasi String dari superclass Shape
         return "Rectangle[" + super.toString() + ", width=" + width + ", length=" + length + "]";
     }
 }
